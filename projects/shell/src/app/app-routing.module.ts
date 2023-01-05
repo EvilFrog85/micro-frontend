@@ -13,6 +13,10 @@ const routes: Routes = [
     data: { title: 'FE - MicroServices page 3' }
   },
   {
+    path: 'signup',
+    loadChildren: () => import('mfe-signup-form/Module').then(m => m.RegisterFormModule)
+  },
+  {
     path: '',
     loadChildren: () => import('./page1/page1.module').then(m => m.Page1Module),
     data: { title: 'FE - MicroServices Start' }

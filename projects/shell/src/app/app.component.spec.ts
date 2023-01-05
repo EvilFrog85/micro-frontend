@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'micro-frontend'`, () => {
+  it(`should have as title 'shell'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('micro-frontend');
+    expect(app.title).toEqual('shell');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('micro-frontend app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('shell app is running!');
   });
 });

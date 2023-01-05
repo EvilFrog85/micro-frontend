@@ -1,0 +1,1 @@
+declare module 'mfe-signup-form/Module';
